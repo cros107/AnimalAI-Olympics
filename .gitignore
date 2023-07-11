@@ -58,3 +58,5 @@ venv/
 .mypy_cache/
 
 env/UnitySDK.log
+envs/
+venv/

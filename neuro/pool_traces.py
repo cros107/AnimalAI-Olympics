@@ -1,9 +1,8 @@
 import sys
 import os
-cwd = os.getcwd()
-if "Desktop" in cwd:
-    sys.path.insert(0, "/Users/ludo/Desktop/animalai/animalai/animalai_train")
-    sys.path.insert(1, "/Users/ludo/Desktop/animalai/animalai/animalai")
+if sys.platform == 'win32':
+    sys.path.insert(0, "../animalai_train")
+    sys.path.insert(1, "../animalai")
 
 else:
     sys.path.insert(0, "/media/home/ludovico/aai/animalai")

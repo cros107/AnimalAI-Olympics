@@ -280,7 +280,7 @@ class Clingo:
         # Just ground macro actions based on observables
 
         if test:
-            lp = test_lp + observables + self.meta_lp
+            lp = test_lp + observables + meta_lp
             res = self.asp(lp)
         elif random|(self.learned_lp is None):
             res = self.random_action_grounder(observables)

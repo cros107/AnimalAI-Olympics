@@ -2,8 +2,8 @@ import numpy as np
 from clyngor import ASP
 
 import sys
-sys.path.insert(0, "/Users/ludo/Desktop/animalai/animalai/animalai_train")
-sys.path.insert(1, "/Users/ludo/Desktop/animalai/animalai/animalai")
+sys.path.insert(0, "../animalai_train")
+sys.path.insert(1, "../animalai")
 
 from animalai.envs.cvis_test import ExtractFeatures
 from animalai.envs.gym.environment import AnimalAIGym
