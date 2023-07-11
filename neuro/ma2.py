@@ -170,7 +170,10 @@ class Action:
                         typ = None
                 else:
                     typ = arg
-                    arg = next(i[3] for i in self.state['obj'] if i[1]==arg)
+                    try:
+                        arg = next(i[3] for i in self.state['obj'] if i[1]==arg)
+                    except StopIteration:
+                        arg = 0
                 res.append([arg, typ]) # ID and object type
             for k,v in self.config.items():
                 if isinstance(v, int):

@@ -54,7 +54,10 @@ class Pipeline:
             action_args = macro_action["initiate"][0][1]
 
         checks = macro_action['check']
-        ma = getattr(macro, action.title())(
+        title = action.title()
+        if title == '':
+            title = 'Explore' #idk lol
+        ma = getattr(macro, title)(
             env, self.ct, state, step_results, action_args, checks)
         step_results, state, macro_stats, micro_step = ma.run(self.ac.arenas[0].pass_mark)
         return step_results, state, micro_step, macro_stats["success"]
