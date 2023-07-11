@@ -5,8 +5,9 @@ if sys.platform == 'win32':
     sys.path.insert(1, "../animalai")
 
 else:
-    sys.path.insert(0, "/media/home/ludovico/aai/animalai")
-    sys.path.insert(1, "/media/home/ludovico/aai/animalai_train")
+    #not sure if this works
+    sys.path.insert(0, "../animalai_train")
+    sys.path.insert(1, "../animalai")
 
 import warnings
 warnings.filterwarnings('ignore')
