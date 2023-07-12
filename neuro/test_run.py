@@ -3,13 +3,13 @@ import os
 if sys.platform == 'win32':
 	sys.path.insert(0, "../animalai_train")
 	sys.path.insert(1, "../animalai")
-	env_path = '../envs/aaiv2'
+	env_path = '../envs/AnimalAI'
 
 else:
     #not sure if this works
     sys.path.insert(0, "../animalai_train")
     sys.path.insert(1, "../animalai")
-    env_path = '../envs/aaiv2'
+    env_path = '../envs/AnimalAI'
 
 from weak_learned import Pipeline
 from collections import namedtuple
